@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballot Web3</title>
+  <link rel="stylesheet" href="/index.3a01df49.css">
+  <style>.item-row {
+  justify-content: row;
+  justify-content: center;
+  display: flex;
+}
+
+.item-vote {
+  text-align: "center";
+  max-width: 250px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.item-vote > img {
+  margin: 0 auto;
+}
+
+.btn-default {
+  color: #fff;
+  height: 35px;
+  background: #8fbc8f;
+  border: 1px;
+  border-radius: 30px;
+}
+
+.btn-default:hover {
+  background: #6c876c;
+}
+
+</style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ballot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+
+        </ul>
+
+        <span class="navbar-text" id="account">
+          <!-- Account -->
+          <div style="margin-top: 10px; margin-left: 15px">
+            <span> Address : </span>
+            <select id="enter_address" value=""></select>
+          </div>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-push-2 mt-5">
+        <h1 class="text-center">Pick Items</h1>
+        <hr>
+        <br>
+      </div>
+    </div>
+
+    <div class="item-row">
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="/apple.7964a7d4.jpg" height="200px" width="200px">
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="/banana.913b22bf.jpg" height="200px" width="200px">
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="/mango.4e8d2833.jpg" height="200px" width="200px">
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="/orange.ad4655f0.jpg" height="200px" width="200px">
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-row" style="justify-content: space-around; margin-top: 50px">
+      <div style="flex-direction: column; display: flex">
+        <select id="enter_address1" value="" style="margin-bottom: 20px"></select>
+        <button class="btn-default" style="padding: 0 20px">
+          Register
+        </button>
+      </div>
+      <div>
+        <button class="btn-default" style="padding: 0 20px">
+          Declare Winner
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/index.3d214d75.js" defer=""></script>
+</body>
+
+</html>

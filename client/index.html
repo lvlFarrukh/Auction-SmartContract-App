@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballot Web3</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .item-row {
+      display: flex;
+      justify-content: row;
+      justify-content: center;
+    }
+
+    .item-vote {
+      display: flex;
+      flex-direction: column;
+      text-align: "center";
+      max-width: 250px;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .item-vote>img {
+      margin: 0px auto;
+    }
+
+    .btn-default {
+      border-radius: 30px;
+      border: 1px;
+      background: darkseagreen;
+      color: white;
+      height: 35px;
+    }
+
+    .btn-default:hover {
+      background: #6c876c
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ballot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+
+        </ul>
+
+        <span class="navbar-text" id="account">
+          <!-- Account -->
+          <div style="margin-left: 15px;margin-top: 10px;">
+            <span> Address : </span>
+            <select id="enter_address" value=""></select>
+          </div>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-push-2 mt-5">
+        <h1 class="text-center">Pick Items</h1>
+        <hr />
+        <br />
+      </div>
+    </div>
+
+    <div class="item-row">
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="./images/apple.jpg" height="200px" width="200px" />
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="./images/banana.jpg" height="200px" width="200px" />
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="./images/mango.jpg" height="200px" width="200px" />
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div id="proposalsRow" class="row">
+        <div class="item-vote">
+          <img src="./images/orange.jpg" height="200px" width="200px" />
+          <button class="btn-default">
+            Vote
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-row" style="justify-content: space-around; margin-top: 50px;">
+      <div style="display: flex; flex-direction: column;">
+        <select id="enter_address1" value="" style="margin-bottom: 20px;"></select>
+        <button class="btn-default" style="padding: 0px 20px;">
+          Register
+        </button>
+      </div>
+      <div>
+        <button class="btn-default" style="padding: 0px 20px;">
+          Declare Winner
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
